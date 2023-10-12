@@ -12,7 +12,7 @@ services:
       test: curl 127.0.0.1:9200 &>/dev/null
 
   kosh:
-    build: https://github.com/cceh/kosh.git
+    build: https://github.com/lguenth/kosh.git#fix/elasticsearch-dsl
     command: --data_host elasticsearch
     image: cceh/kosh:latest
     ports: [5000:5000]
